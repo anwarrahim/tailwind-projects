@@ -1,15 +1,41 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css">
-    <title>Vite App</title>
-  </head>
-  <body>
-    
-    <h1 class="text-blue-400 block text-center ">Block Working</h1>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <!-- background -->
+  <div class="flex justify-center items-center bg-zinc-700 h-screen text-white">
+    <div class="bg-zinc-800 p-2 mx-6 rounded-xl">
+      <div class="flex flex-col md:flex-row rounded-l-xl">
+        <img
+          class="object-center rounded-t-xl  md:rounded-l-xl md:rounded-r-none  h-80 md:h-64 transform hover:scale-104 hover:md:scale-105 duration-200 hover:md:rounded-l-xl"
+          src="./src/images/image.jpg" alt="">
+        <div class=" p-6 md:p-12 ">
+          <h2 class="font-serif text-xl font-medium text-white text-center md:text-left">Get diet and fitness tips in
+            your inbox</h2>
+          <p class="max-w-xs my-4 text-xs/5  text-white tracking-wide">Eat better and exercise better. Sign up for the
+            Diet&Fitness newsletter.</p>
+          <div class="flex flex-col mt-5 space-y-4 md:space-x-3 md:flex-row md:space-y-0">
+            <input
+              class="font-sans text-sm font-light placeholder:text-white p-3 md:px-2 border-1 border-stone-500 bg-zinc-800 text-left transform group-focus:md:translate-x-5  focus:outline-none"
+              type="email" placeholder="Enter your email address" name="" id="">
+            <button
+              class="font-sans text-xs font-light tracking-wider text-black duration-500 transition-colors bg-lime-500 rounded-sm hover:bg-lime-800  hover:text-white p-3  transform group-focus:md:translate-x-5"
+              type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
